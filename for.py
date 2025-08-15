@@ -49,3 +49,31 @@ for i in range(1,51):
     
 print(f'soma dos numeros é: {soma}')
 
+#// 
+
+#Atividade 07: Contagem de Vogais em uma Palavra: Crie um programa que solicite uma palavra ao usuário e use um laço for com uma condicional para contar quantas vogais (a, e, i, o, u) a palavra contém.
+
+palavra = str (input('Digite a palavra: '))
+vogais = 'aeiouAEIOU'
+contador = 0
+for i in palavra:
+    if i in vogais:
+        contador += 1
+print(f'Na palavra {palavra} tem total  {contador} vogais')
+
+#// 
+
+#Atividade 08: Cálculo de Média de Notas: Escreva um programa que solicite 5 notas de alunos. Use um laço for para somar as notas e uma condicional para exibir a média e a classificação ("Aprovado" para média >= 6, "Reprovado" para média < 6).
+soma = 0
+for i in range(1, 6):
+    nota = float(input(f"Digite a {i}ª nota: "))
+    soma += nota
+
+media = soma / 5
+print(f"Média: {media:.2f}")
+
+if media >= 6:
+    print("Aprovado")
+else:
+    print(" Reprovado")
+
