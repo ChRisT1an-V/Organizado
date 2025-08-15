@@ -1,2 +1,0 @@
-# Organizado
-iniciante ao avançado.
