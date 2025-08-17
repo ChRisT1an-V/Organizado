@@ -151,7 +151,7 @@ if quantidade >10:
     print('Você comprou mais de 10 unidades, você tem direito a 10 porcento de desconto')
     print(f'O valor do produto com desconto é: R${preco:.2f}')
 else:
-    print(' você não comprou a quantidade mínima para desconto')
+    print(' você não comprou a quantidade mínima para desconto') 
   
 #//
 
