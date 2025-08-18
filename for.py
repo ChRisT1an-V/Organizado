@@ -76,4 +76,35 @@ if media >= 6:
     print("Aprovado")
 else:
     print(" Reprovado")
+#//
 
+#Atividade 09: Verificar Números Pares e Impares com Interrupção: Crie um programa que use um laço for para contar de 1 a 20. Use condicionais para identificar números pares e ímpares. Pare o loop ao encontrar o número 15, usando break.
+
+for i in range(1, 21):
+    if i %2 == 0:
+        print('Par:', i)
+    else:
+        print('Impar:', i)
+
+    if i == 15:
+        print('O Numero 15 foi encontrado, fim.')
+        break
+#//
+
+#Atividade 10: Peça ao usuário para inserir 10 números. Use um laço for com condicionais para contar quantos são positivos e quantos são negativos. Pare o loop se o número 0 for inserido, usando break.
+positivo = 0
+negativo = 0
+tentativa = 0
+for i in range(10):
+    numero = int(input('Digite o numero: '))
+    tentativa += 1
+    if numero == 0:
+        print(' Você acertou o numero 0, fim.')
+        break
+    elif numero > 0:
+        positivo += 1
+        print('Numero positivo:', numero)
+    else:
+        negativo += 1
+        print('Numero negativo:', numero)
+    print(f'Tentativa {tentativa} de 10')
